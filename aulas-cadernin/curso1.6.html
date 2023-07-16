@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias  em HTML</title>
+    <style>
+        body{
+            background-color: rgb(196, 236, 223);
+        }
+    </style>
+</head>
+<body>
+    <picture>
+        <source media="(max-width: 750px)" srcset="/imagens-html/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="/imagens-html/foto-m.png" type="image/png">
+        <img src="/imagens-html/foto-g.png" alt="imagem flexível">
+    </picture>
+    <h1>Reproduzindo Áudios</h1>
+    <!--MP3 OGG WAV-->
+        <p>audio do momo bilíngue em HTML5 <em><small>(um dia vou traduzir tudo)</small></em>.</p>
+        <audio src="/imagens-html/audio-momo-bilingue.mp3" controls></audio>
+    <br> <p>comentario aq, autoplay </p>
+    <!--<audio preload="metadata" autoplay controls loop  >
+            <source src="/imagens-html/audio-momo-bilingue.mp3" type="audio/mpeg">
+            <source src="/imagens-html/audio-momo-bilingue.ogg" type="audio/ogg">
+            <source src="/imagens-html/audio-momo-bilingue.mp3" type="audio/wav">
+            <p>caso não foi possível escutar, baixe <a href="#">aqui</a> o áudio</p>
+    </audio>-->
+
+    <h1>Inserindo vídeos hospedados localmente</h1>
+    <p>Este vídeo está hospedado no meu próprio servidor</p>
+    <video width="500" controls poster="/imagens-html/tumb.jpg">
+        <source src="/imagens-html/Meu-Video.mp4" type="video/mp4" >
+        <source src="/imagens-html/Meu-Video.ogv" type="video/ogg">
+        <source src="/imagens-html/Meu-Video.webm" type="video/wav">
+        <p>seu navegador não tem compatibilidade com reprodução de vídeos. <small>(MPEG WEBM OGG)</small></p>
+    </video>
+    <h1>Inserindo vídeos do YouTube.</h1>
+    <iframe width="500" height="315" src="https://www.youtube.com/embed/e96_1NxL9no" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <h1>Inserindo vídeos dp Vimeo</h1>
+    <iframe title="vimeo-player" src="https://player.vimeo.com/video/185636917?h=d0977d5a4b" width="500" height="315" frameborder="0"    allowfullscreen></iframe>
+</body>
+
+</html>
